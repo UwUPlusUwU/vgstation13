@@ -1943,6 +1943,8 @@
 #include "code\modules\nano\nanoexternal.dm"
 #include "code\modules\nano\nanomanager.dm"
 #include "code\modules\nano\nanoui.dm"
+#include "code\modules\opo\departments\40k.dm"
+#include "code\modules\opo\departments\departmental coats.dm"
 #include "code\modules\optics\photocollector.dm"
 #include "code\modules\optics\prism.dm"
 #include "code\modules\optics\mirrors\frame.dm"
