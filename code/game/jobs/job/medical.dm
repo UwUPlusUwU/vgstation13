@@ -1,5 +1,5 @@
 /datum/job/cmo
-	title = "Chief Medical Officer"
+	title = "Grandmaster"
 	flag = CMO
 	department_flag = MEDSCI
 	faction = "Station"
@@ -54,7 +54,7 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /datum/job/doctor
-	title = "Medical Doctor"
+	title = "Plague Doctor"
 	flag = DOCTOR
 	department_flag = MEDSCI
 	faction = "Station"
@@ -65,7 +65,7 @@
 	idtype = /obj/item/weapon/card/id/medical
 	access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_eva)
 	minimal_access = list(access_medical, access_morgue, access_surgery, access_virology)
-	alt_titles = list("Emergency Physician", "Nurse", "Surgeon")
+	alt_titles = list("Senior Plague Doctor")
 
 	pdaslot=slot_belt
 	pdatype=/obj/item/device/pda/medical
@@ -126,7 +126,7 @@
 
 //Chemist is a medical job damnit	//YEAH FUCK YOU SCIENCE	-Pete	//Guys, behave -Erro //No, fuck science
 /datum/job/chemist
-	title = "Chemist"
+	title = "Alchemist"
 	flag = CHEMIST
 	department_flag = MEDSCI
 	faction = "Station"
@@ -137,7 +137,7 @@
 	idtype = /obj/item/weapon/card/id/medical
 	access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_eva)
 	minimal_access = list(access_medical, access_chemistry)
-	alt_titles = list("Pharmacist")
+	alt_titles = list("Senior Alchemist")
 
 	pdaslot=slot_belt
 	pdatype=/obj/item/device/pda/chemist
@@ -175,7 +175,7 @@
 	H.equip_or_collect(new /obj/item/weapon/storage/bag/chem(H.back), slot_in_backpack)
 
 /datum/job/geneticist
-	title = "Geneticist"
+	title = "Biogenitor"
 	flag = GENETICIST
 	department_flag = MEDSCI
 	faction = "Station"
@@ -220,7 +220,7 @@
 	H.equip_or_collect(new /obj/item/weapon/storage/belt/medical(H.back), slot_in_backpack)
 
 /datum/job/virologist
-	title = "Virologist"
+	title = "Pathogenitor"
 	flag = VIROLOGIST
 	department_flag = MEDSCI
 	faction = "Station"
@@ -230,7 +230,6 @@
 	selection_color = "#ffeef0"
 	access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology, access_biohazard, access_genetics, access_eva)
 	minimal_access = list(access_medical, access_virology, access_biohazard)
-	alt_titles = list("Pathologist", "Microbiologist")
 
 	pdaslot=slot_belt
 	pdatype=/obj/item/device/pda/viro

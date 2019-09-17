@@ -1,5 +1,5 @@
 /datum/job/chief_engineer
-	title = "Chief Engineer"
+	title = "Foreman"
 	flag = CHIEF
 	department_flag = ENGSEC
 	faction = "Station"
@@ -56,7 +56,7 @@
 
 
 /datum/job/engineer
-	title = "Station Engineer"
+	title = "Wrench Monkey"
 	flag = ENGINEER
 	department_flag = ENGSEC
 	faction = "Station"
@@ -67,7 +67,7 @@
 	idtype = /obj/item/weapon/card/id/engineering
 	access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction, access_atmospherics)
 	minimal_access = list(access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction)
-	alt_titles = list("Maintenance Technician","Engine Technician","Electrician")
+	alt_titles = list("Teslalord")
 
 	pdaslot=slot_l_store
 	pdatype=/obj/item/device/pda/engineering
@@ -112,7 +112,7 @@
 	H.equip_or_collect(new /obj/item/clothing/gloves/yellow(H), slot_gloves)
 
 /datum/job/atmos
-	title = "Atmospheric Technician"
+	title = "Gasmatter"
 	flag = ATMOSTECH
 	department_flag = ENGSEC
 	faction = "Station"
@@ -157,18 +157,17 @@
 	H.equip_or_collect(new /obj/item/clothing/gloves/yellow(H), slot_gloves)
 
 /datum/job/mechanic
-	title = "Mechanic"
+	title = "Speed Freak"
 	flag = MECHANIC
 	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 3
 	spawn_positions = 2
-	supervisors = "the research director and the chief engineer"
+	supervisors = "the chief engineer"
 	selection_color = "#fff5cc"
 	idtype = /obj/item/weapon/card/id/engineering
 	access = list(access_eva, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction, access_mechanic, access_tcomsat, access_science)
 	minimal_access = list(access_maint_tunnels, access_emergency_storage, access_construction, access_engine_equip, access_external_airlocks, access_mechanic, access_tcomsat, access_science)
-	alt_titles = list("Telecommunications Technician", "Spacepod Mechanic", "Greasemonkey")
 
 	pdaslot=slot_l_store
 	pdatype=/obj/item/device/pda/mechanic

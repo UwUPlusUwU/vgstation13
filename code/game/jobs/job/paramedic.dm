@@ -1,5 +1,5 @@
 /datum/job/paramedic
-	title = "Paramedic"
+	title = "Crusader"
 	flag = PARAMEDIC
 	department_flag = MEDSCI
 	faction = "Station"
